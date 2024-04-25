@@ -1,0 +1,17 @@
+.bilder {
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+}
+
+.bilder h5, .bilder p {
+    color: rgb(209, 209, 209);
+    font-weight: 600;
+}
+
+.carousel-caption {
+    background-color: rgba(59, 59, 59, 0.842);
+    height: 120px;
+}

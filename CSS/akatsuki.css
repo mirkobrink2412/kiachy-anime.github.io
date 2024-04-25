@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+body {
+    background-color: #141414;
+    background-image: url(../Bilder/akatsuki\ log.jpg);
+}
+
+header {
+    background-image: url(../Bilder/headerbild.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding-top: 30px;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+}
+
+#nav { 
+   font-size:20px;
+   line-height:30px;
+   background:rgb(11, 11, 12);
+}
+
+#nav a{
+   display:block;
+   padding: 0 5px 0 10px;
+   background-color:rgb(11, 11, 12);
+   width: 300px;
+   border-radius: 5px;
+}
+
+#nav a[href] { 
+   text-decoration:none;
+   color:rgb(134, 1, 1);
+}
+
+#nav > li {
+   display:inline;
+   display:inline-block; 
+   vertical-align:top;    
+}
+
+#nav *:focus { 
+   outline-width:0; 
+}
+/* schatten nav elemente */
+#nav {
+   text-align:center;
+}
+#nav > li > a {
+   padding: 5px 10px;
+}
+/* schatten nav elemente ende */
+
+#nav ul {
+   position:absolute;
+   min-width:10em;
+   text-align:left;
+   list-style-type: none;
+   margin-top: 10px;
+}
+
+#nav li {
+   position:relative;
+} 
+
+#nav .level1 {
+   top:30px;
+   left: -1999px;    
+   /* einblenden left:-1px;*/
+}
+#nav .level2, #nav .level3, #nav .level4 {
+   top:-1px;
+   left:-1999px;
+    /*einblenden left:8em; */
+}
+
+#nav a:hover, #nav li.hover >  a { 
+   background-color: #272727; 
+   color: rgb(134, 1, 1);
+   font-style: italic;
+   position:relative;
+   z-index:20;
+}
+
+.level1 { z-index:11; }
+.level2 { z-index:12; }
+.level3 { z-index:13; }
+.level4 { z-index:14; }
+
+#nav > li:hover .level1, #nav > li.hover .level1           { 
+   left:-32px; 
+}
+#nav li:hover > .level2, #nav .level1 >li.hover .level2  { left:13.3em; top:-0.5em }
+#nav li:hover > .level3, #nav .level2 >li.hover .level3  { left:13.3em; top: -0.5em; }
+#nav li:hover > .level4, #nav .level3 >li.hover .level4  { left:13.3em; top: -0.5em;}
+
+h1 {
+    color: rgb(255, 153, 0);
+    text-align: center;
+    padding-top:20px;
+    font-size: 60px;
+    text-shadow: 1px 1px 20px rgb(255, 253, 250);
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header p {
+    color: rgb(255, 153, 0);
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 20px rgb(255, 253, 250);
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    padding-top: 50px;
+    width: 75vw;
+    margin: auto;
+}
+
+p {
+    color: rgb(134, 1, 1);
+    font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2, h3, b {
+    color: rgb(134, 1, 1);
+    text-shadow: 1px 0px 10px rgb(92, 92, 92);
+    background-color: rgb(34, 34, 36);
+}
+
+.img {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.cha1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    height: 390px;
+    margin-bottom: 40px;
+    background-color: rgb(29, 28, 28);
+}
+
+.chabild1 {
+    margin-right: 20px;
+}
+
+.chabild1 img{
+    max-width: 360px;
+    min-height: 390px;
+    max-height: 390px
+}
+
+.cha2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    text-align: right;
+    height: 390px;
+    margin-bottom: 40px;
+    background-color: rgb(34, 34, 36);
+}
+
+.chabild2 {
+    margin-left: 20px;
+}
+
+.chabild2 img{
+    max-width: 360px;
+    min-height: 390px;
+    max-height: 390px
+    ;
+}
+
+.mitglieder h3 {
+    margin-bottom: 20px;
+}
+
+.cha2>.chainfo {
+    order: -1;
+}
+
+.zucharakteren {
+    font-size: larger;
+}
+
+.teamlinks {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 30px;
+    background-color: rgb(34, 34, 36);
+    height: 40px;
+    align-items: center;
+}
+
+.teamlinks a {
+    text-decoration: none;
+    color: rgb(134, 1, 1);
+    font-size: larger;
+}
+
+.teamlinks a:hover, .teamlinks i:hover{
+    color: rgb(187, 111, 12);
+    font-weight: bold;
+}
+
+.carousel-caption{
+    background-color: rgba(134, 1, 1, 0.459);
+}
+
+.carousel-caption h5 {
+    color: white;
+    text-shadow: none;
+}
+
+.carousel-caption p {
+    color: white;
+}
+
+.carousel {
+    margin-bottom: 30px;
+}
+
+.info {
+    background-color: rgb(29, 28, 28);
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+
+.info p {
+    margin: 20px;
+}
+
+.mitglüberschrift {
+    height: 34.5px ;
+}
+
+footer {
+    height: 300px;
+    background-color: rgb(11, 11, 12);
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 16.3vw 16.3vw 16.3vw 16.3vw 16.3vw 16.3vw;
+    grid-template-rows: 150px 150px;
+    text-align: center;
+}
+
+footer div a {
+    text-decoration: none;
+    color: rgb(134, 1, 1);
+    font-size: larger;
+}
+
+footer div a:hover, footer div i:hover{
+    color: orange;
+    font-weight: bold;
+}
+
+footer div {
+    padding-top: 20px;
+}
+
+footer h3 {
+    color: rgb(134, 1, 1);
+}
+
+
+
+.hilfe {
+    height: 80px;
+    width: 300px;
+    position: relative;
+    top: -50px;
+    left: 25vw;
+}
+
+.socials {
+    height: 80px;
+    width: 300px;
+    position: relative;
+    top: -50px;
+    left: 50vw;
+    font-size: 25px;
+}
+
+.oben {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    
+}
+
+.oben a{
+    color: rgb(134, 1, 1);
+    background-color: rgb(34, 34, 36);
+}

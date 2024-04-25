@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+body {
+    background-color: #132447;
+}
+
+header {
+    background-image: url(../Bilder/headerbild.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding-top: 30px;
+    width: 100%;
+}
+
+h1 {
+    color: rgb(255, 153, 0);
+    text-align: center;
+    padding-top:20px;
+    font-size: 60px;
+    text-shadow: 1px 1px 20px rgb(255, 253, 250);
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header p {
+    color: rgb(255, 153, 0);
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 20px rgb(255, 253, 250);
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    padding-top: 50px;
+    width: 75vw;
+    margin: auto;
+}
+
+p {
+    color: gainsboro;
+    font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2, h3, b {
+    color: rgb(218, 253, 241);
+}
+
+.impressum h2, .rechtliches {
+    padding-left: 31px;
+}
+
+.impressum ul {
+    list-style-type: none;
+}

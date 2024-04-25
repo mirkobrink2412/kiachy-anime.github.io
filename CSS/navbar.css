@@ -1,0 +1,86 @@
+
+nav {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+}
+
+#nav { 
+   font-size:20px;
+   line-height:30px;
+   background:rgb(12, 18, 66);
+}
+
+#nav a{
+   display:block;
+   padding: 0 5px 0 10px;
+   background-color: rgb(12, 18, 66);
+   width: 300px;
+   border-radius: 5px;
+}
+
+#nav a[href] { 
+   text-decoration:none;
+   color:orange;
+}
+
+#nav > li {
+   display:inline;
+   display:inline-block; 
+   vertical-align:top;    
+}
+
+#nav *:focus { 
+   outline-width:0; 
+}
+/* schatten nav elemente */
+#nav {
+   text-align:center;
+}
+#nav > li > a {
+   padding: 5px 10px;
+}
+/* schatten nav elemente ende */
+
+#nav ul {
+   position:absolute;
+   min-width:10em;
+   text-align:left;
+   list-style-type: none;
+   margin-top: 10px;
+}
+
+#nav li {
+   position:relative;
+} 
+
+#nav .level1 {
+   top:30px;
+   left: -1999px;    
+   /* einblenden left:-1px;*/
+}
+#nav .level2, #nav .level3, #nav .level4 {
+   top:-1px;
+   left:-1999px;
+    /*einblenden left:8em; */
+}
+
+#nav a:hover, #nav li.hover >  a { 
+   background-color: #272727; 
+   color: rgb(150, 85, 0);
+   font-style: italic;
+   position:relative;
+   z-index:20;
+}
+
+.level1 { z-index:11; }
+.level2 { z-index:12; }
+.level3 { z-index:13; }
+.level4 { z-index:14; }
+
+#nav > li:hover .level1, #nav > li.hover .level1           { 
+   left:-32px; 
+}
+#nav li:hover > .level2, #nav .level1 >li.hover .level2  { left:13.3em; top:-0.5em }
+#nav li:hover > .level3, #nav .level2 >li.hover .level3  { left:13.3em; top: -0.5em; }
+#nav li:hover > .level4, #nav .level3 >li.hover .level4  { left:13.3em; top: -0.5em;}

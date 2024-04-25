@@ -1,0 +1,59 @@
+footer {
+    height: 300px;
+    background-color: rgb(41, 41, 116);
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 16.3vw 16.3vw 16.3vw 16.3vw 16.3vw 16.3vw;
+    grid-template-rows: 150px 150px;
+    text-align: center;
+}
+
+footer div a {
+    text-decoration: none;
+    color: wheat;
+    font-size: larger;
+}
+
+footer div a:hover, footer div i:hover{
+    color: orange;
+    font-weight: bold;
+}
+
+footer div {
+    padding-top: 20px;
+}
+
+footer h3 {
+    color: rgb(240, 148, 10);
+}
+
+
+
+.hilfe {
+    height: 80px;
+    width: 300px;
+    position: relative;
+    top: -50px;
+    left: 25vw;
+}
+
+.socials {
+    height: 80px;
+    width: 300px;
+    position: relative;
+    top: -50px;
+    left: 50vw;
+    font-size: 25px;
+}
+
+.oben {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+.oben a{
+    color: orange;
+}
